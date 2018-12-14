@@ -1,12 +1,13 @@
 class Solution:
-    def singleNumber(self, nums):
+    def arrayPairSum(self, nums):
         """
         :type nums: List[int]
         :rtype: int
         """
-        pass
+        sorted(nums)
+        return sum(nums[::2])
 
 
 if __name__ == "__main__":
     s = Solution()
-    print(s.singleNumber([2, 2, 1]))
+    print(s.arrayPairSum([1, 4, 2, 2]))

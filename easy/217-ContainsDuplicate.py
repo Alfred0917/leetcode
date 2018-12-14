@@ -4,8 +4,6 @@ class Solution:
         :type nums: List[int]
         :rtype: bool
         """
-        print(len(set(nums)))
-        print(len(nums))
         if len(nums) == len(set(nums)):
             return False
         else:
